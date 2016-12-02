@@ -19,6 +19,14 @@
 		1D228CCE1DE7D37F0046CAF2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D228CCC1DE7D37F0046CAF2 /* MainInterface.storyboard */; };
 		1D228CD01DE7D37F0046CAF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D228CCF1DE7D37F0046CAF2 /* Assets.xcassets */; };
 		1D228CD41DE7D37F0046CAF2 /* imassage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D228CC51DE7D37F0046CAF2 /* imassage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D6FE2BD1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228CCA1DE7D37F0046CAF2 /* MessagesViewController.swift */; };
+		1D6FE2BE1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228CCA1DE7D37F0046CAF2 /* MessagesViewController.swift */; };
+		1D6FE2BF1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228CCA1DE7D37F0046CAF2 /* MessagesViewController.swift */; };
+		1D6FE2C01DF10BC600BE6AF6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228CCA1DE7D37F0046CAF2 /* MessagesViewController.swift */; };
+		1D6FE2C11DF10BF600BE6AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228C931DE40D720046CAF2 /* ViewController.swift */; };
+		1D6FE2C21DF10BF800BE6AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228C931DE40D720046CAF2 /* ViewController.swift */; };
+		1D6FE2C31DF10BF800BE6AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D228C931DE40D720046CAF2 /* ViewController.swift */; };
+		1D6FE2C41DF10C3900BE6AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D228CCF1DE7D37F0046CAF2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +330,7 @@
 			files = (
 				1D228C9C1DE40D720046CAF2 /* LaunchScreen.storyboard in Resources */,
 				1D228C991DE40D720046CAF2 /* Assets.xcassets in Resources */,
+				1D6FE2C41DF10C3900BE6AF6 /* Assets.xcassets in Resources */,
 				1D228C971DE40D720046CAF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +367,7 @@
 			files = (
 				1D228C941DE40D720046CAF2 /* ViewController.swift in Sources */,
 				1D228CC01DE40D870046CAF2 /* BezierView.swift in Sources */,
+				1D6FE2BD1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */,
 				1D228C921DE40D720046CAF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6FE2C21DF10BF800BE6AF6 /* ViewController.swift in Sources */,
+				1D6FE2BE1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */,
 				1D228CA71DE40D720046CAF2 /* multimediaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6FE2C31DF10BF800BE6AF6 /* ViewController.swift in Sources */,
+				1D6FE2BF1DF10BC500BE6AF6 /* MessagesViewController.swift in Sources */,
 				1D228CB21DE40D720046CAF2 /* multimediaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6FE2C11DF10BF600BE6AF6 /* ViewController.swift in Sources */,
+				1D6FE2C01DF10BC600BE6AF6 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +545,7 @@
 		1D228CB71DE40D720046CAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = multimedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,6 +558,7 @@
 		1D228CB81DE40D720046CAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = multimedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -676,6 +694,7 @@
 				1D228CD61DE7D3800046CAF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

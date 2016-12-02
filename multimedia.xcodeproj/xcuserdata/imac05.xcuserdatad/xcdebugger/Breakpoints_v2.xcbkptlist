@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "multimedia/BezierView.swift"
-            timestampString = "502024322.641042"
+            timestampString = "502340910.316873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "draw(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "multimedia/BezierView.swift"
-            timestampString = "502026059.027211"
+            timestampString = "502340910.316873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "draw(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "multimedia/BezierView.swift"
-            timestampString = "502026059.027211"
+            timestampString = "502340910.316873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "draw(_:)"
             landmarkType = "7">
          </BreakpointContent>

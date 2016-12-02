@@ -21,6 +21,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
