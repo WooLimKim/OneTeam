@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D228CC41DE7D37F0046CAF2"
-               BuildableName = "imassage.appex"
-               BlueprintName = "imassage"
-               ReferencedContainer = "container:multimedia.xcodeproj">
+               BlueprintIdentifier = "1DEB5BD31DFC2DA900FB0AFB"
+               BuildableName = "MessagesExtension.appex"
+               BlueprintName = "MessagesExtension"
+               ReferencedContainer = "container:sadariApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D228C8D1DE40D720046CAF2"
-               BuildableName = "multimedia.app"
-               BlueprintName = "multimedia"
-               ReferencedContainer = "container:multimedia.xcodeproj">
+               BlueprintIdentifier = "1DEB5BC91DFC2DA900FB0AFB"
+               BuildableName = "sadariApp.app"
+               BlueprintName = "sadariApp"
+               ReferencedContainer = "container:sadariApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D228CC41DE7D37F0046CAF2"
-            BuildableName = "imassage.appex"
-            BlueprintName = "imassage"
-            ReferencedContainer = "container:multimedia.xcodeproj">
+            BlueprintIdentifier = "1DEB5BD31DFC2DA900FB0AFB"
+            BuildableName = "MessagesExtension.appex"
+            BlueprintName = "MessagesExtension"
+            ReferencedContainer = "container:sadariApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D228C8D1DE40D720046CAF2"
-            BuildableName = "multimedia.app"
-            BlueprintName = "multimedia"
-            ReferencedContainer = "container:multimedia.xcodeproj">
+            BlueprintIdentifier = "1DEB5BC91DFC2DA900FB0AFB"
+            BuildableName = "sadariApp.app"
+            BlueprintName = "sadariApp"
+            ReferencedContainer = "container:sadariApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -91,10 +91,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D228C8D1DE40D720046CAF2"
-            BuildableName = "multimedia.app"
-            BlueprintName = "multimedia"
-            ReferencedContainer = "container:multimedia.xcodeproj">
+            BlueprintIdentifier = "1DEB5BC91DFC2DA900FB0AFB"
+            BuildableName = "sadariApp.app"
+            BlueprintName = "sadariApp"
+            ReferencedContainer = "container:sadariApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

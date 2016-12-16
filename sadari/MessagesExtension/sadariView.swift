@@ -9,15 +9,19 @@
 import UIKit
 import QuartzCore
 
-class BezierView: UIView {
-    
+protocol ViewControllerDelegate {
+    func numset(_: Int)->(Int)
+}
 
-//    let animation:CAKeyframeAnimation
+class sadariView: UIView {
+    var num : Int = 1
+    var messageDelegate : ViewControllerDelegate? = nil
+    
+    //    let animation:CAKeyframeAnimation
     override func draw(_ rect: CGRect) {
-        
-        
+      
         var str = "Hello, playground"
-        
+      
         let player = 4
         let fild = player*2-1
         let n = 8
@@ -29,7 +33,7 @@ class BezierView: UIView {
             let random = Int(arc4random_uniform(2)) //1 or 0
             return random
         }
-
+        
         func InitSadari()
         {
             for i in 0..<fild
@@ -73,52 +77,52 @@ class BezierView: UIView {
         InitSadari()
         MackSadari()
         
-   
+        
         
         self.backgroundColor = UIColor.white
         
         var path1 = UIBezierPath()
-           var path2 = UIBezierPath()
-           var path3 = UIBezierPath()
-           var path4 = UIBezierPath()
-            var path5 = UIBezierPath()
+        var path2 = UIBezierPath()
+        var path3 = UIBezierPath()
+        var path4 = UIBezierPath()
+        var path5 = UIBezierPath()
         var path:Array<UIBezierPath> = [UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath(),UIBezierPath()]
-     
         
         
-
-            var AnswerPath = UIBezierPath()
         
-  
- 
-
+        
+        var AnswerPath = UIBezierPath()
+        
+        
+        
+        
         
         path1.move(to: CGPoint(x:100, y: 100))
-
+        
         path2.move(to: CGPoint(x: 100, y: 100))
         path2.addLine(to: CGPoint(x:100,y:550))
-  
+        
         path3.move(to: CGPoint(x: 150, y: 100))
         path3.addLine(to: CGPoint(x:150,y:550))
         path4.move(to: CGPoint(x: 200, y:100))
         path4.addLine(to: CGPoint(x:200,y:550))
         path5.move(to: CGPoint(x: 250, y:100))
         path5.addLine(to: CGPoint(x:250,y:550))
-
+        
         var g = 0
         
         for x1 in 1...(fild+1)
         {
             if(x1%2==1)//배열이 홀수일때 즉 0,1 구분을 할때
             {
-                    for y1 in 0...7 // 그안의 값들을 하나씩 정리한다.
-                    {if(​emptyArray2​[x1][y1]==1)
-                        {
-                            path[g].move(to: CGPoint(x:75+(25*x1),y:150+50*(y1)))
-                            path[g].addLine(to: CGPoint(x:125+(25*x1),y:150+50*(y1)))
-                            g += 1
-                        }
+                for y1 in 0...7 // 그안의 값들을 하나씩 정리한다.
+                {if(​emptyArray2​[x1][y1]==1)
+                {
+                    path[g].move(to: CGPoint(x:75+(25*x1),y:150+50*(y1)))
+                    path[g].addLine(to: CGPoint(x:125+(25*x1),y:150+50*(y1)))
+                    g += 1
                     }
+                }
             }
         }
         
@@ -126,7 +130,7 @@ class BezierView: UIView {
         {
             var StateX = 0
             var StateY = 0
-
+            
             
             StateX = (Number-1)*2
             
@@ -152,9 +156,9 @@ class BezierView: UIView {
                     if(​emptyArray2​[StateX-1][StateY] == 1)
                     {AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                         StateX -= 2
-                    AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
+                        AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                         StateY += 1
-                    AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
+                        AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                     }
                     else
                     {
@@ -167,7 +171,7 @@ class BezierView: UIView {
                 {
                     if(​emptyArray2​[StateX-1][StateY] == 1)
                     {AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
-                    
+                        
                         StateX -= 2
                         AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                         StateY += 1
@@ -178,7 +182,7 @@ class BezierView: UIView {
                         StateX += 2
                         AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                         StateY += 1
-                       AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
+                        AnswerPath.addLine(to: CGPoint(x:100+(StateX*25), y: 100+((StateY+1)*50)))
                     }
                     else
                     {
@@ -191,64 +195,65 @@ class BezierView: UIView {
             
             return StateX
         }
-        SerchSadari(Number: 1)
+        SerchSadari(Number: num)
         
-//        var j = 0;
-//        var i = 0;
-//        var z = 0;
-//     while i <= 5
-//     {
-//        
-//        path.move(to: CGPoint(x:100*x1,y:150+50*y1))
-//        path.addLine(to: CGPoint(x:200*x1,y:150+50*y1))
-    
-//        path1.addLine(to: arrayCGPoint(x: i, y: j))
-//        if(z%2==1)
-//        
-//        {j += 1
-//        z += 1
-//        }
-//        else{
-//        i += 1
-//            z += 1
-//        }
-//       
-//      
-//        }
-
+        //        var j = 0;
+        //        var i = 0;
+        //        var z = 0;
+        //     while i <= 5
+        //     {
+        //
+        //        path.move(to: CGPoint(x:100*x1,y:150+50*y1))
+        //        path.addLine(to: CGPoint(x:200*x1,y:150+50*y1))
         
-
-        UIColor.red.setStroke()
+        //        path1.addLine(to: arrayCGPoint(x: i, y: j))
+        //        if(z%2==1)
+        //
+        //        {j += 1
+        //        z += 1
+        //        }
+        //        else{
+        //        i += 1
+        //            z += 1
+        //        }
+        //
+        //
+        //        }
+        
+        
+        
+        UIColor.black.setStroke()
         path1.lineWidth = 4.0
         path1.stroke()
         
-         UIColor.black.setStroke()
+        UIColor.black.setStroke()
         path2.lineWidth = 4.0
         path2.stroke()
         
-        UIColor.blue.setStroke()
+        UIColor.black.setStroke()
         path3.lineWidth = 4.0
         path3.stroke()
         
-        UIColor.green.setStroke()
+        UIColor.black.setStroke()
         path4.lineWidth = 4.0
         path4.stroke()
         
-        UIColor.gray.setStroke()
+        UIColor.black.setStroke()
         path5.lineWidth = 4.0
         path5.stroke()
         
-        UIColor.brown.setStroke()
-        AnswerPath.lineWidth = 9.0
-        AnswerPath.stroke()
+       
         for i in 0...g
         {
-            UIColor.red.setStroke()
+            UIColor.gray.setStroke()
             path[i].lineWidth = 5.0
             path[i].stroke()
-           
+            
         }
-    
+        UIColor.red.setStroke()
+        AnswerPath.lineWidth = 9.0
+        AnswerPath.stroke()
+        
     }
     
     
@@ -275,8 +280,8 @@ class BezierView: UIView {
             path.lineWidth = 10.0
             path.stroke()
             print("qweqwe")
-        
-        
+            
+            
             
         }
     }
